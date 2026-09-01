@@ -55,5 +55,4 @@ The final artifact may hide assumptions, shortcuts, abandoned approaches, uncert
 - [Evaluation](EVALUATION.md)
 - [Contributing](CONTRIBUTING.md)
 - [Security](SECURITY.md)
-- [Brand policy](BRAND.md)
 - [Apache-2.0 license](LICENSE)
