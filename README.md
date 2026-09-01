@@ -11,7 +11,7 @@ It works across domains because it does not encode separate legal, software, med
 - Asks one focused question at a time.
 - Allows one focused follow-up for a missing response element.
 - Rechecks work changed during questioning.
-- Ends with `Human checkpoint complete` or `Human checkpoint incomplete` and explicit limitations.
+- Ends with `Human judgment checkpoint complete` or `Human checkpoint incomplete` and explicit limitations.
 
 It does not verify identity, credentials, unaided human authorship, correctness, safety, compliance, approval, exhaustive coverage, or a signature. It does not replace professional review.
 
@@ -38,10 +38,6 @@ Automatic end-of-task activation is best effort because each harness controls sk
 ## Why conversation trajectory matters
 
 The final artifact may hide assumptions, shortcuts, abandoned approaches, uncertainty, and decisions delegated to the agent. The available trajectory helps locate those decisions. It never counts as the participant's judgment; only a direct response after a checkpoint question can satisfy that question.
-
-## Relationship to Socrates
-
-This skill provides a local conversational implementation of the human-judgment method. The hosted Socrates GitHub App is a separate system of record that can authenticate GitHub accounts, bind activity to commits, manage follow-ups, and issue signed records. A local skill receipt is not an official Socrates stamp.
 
 ## Project policies
 

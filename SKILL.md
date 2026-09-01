@@ -105,7 +105,7 @@ Changing the artifact may reveal new decisions. Continue one at a time until no 
 
 When every identified decision is addressed for the current scope, emit:
 
-**Human checkpoint complete**
+**Human judgment checkpoint complete**
 
 - **Scope:** Identify the artifact or change version reviewed.
 - **Decisions addressed:** List short neutral labels for the decisions, or state that adequate inspection found no consequential human judgment to request.
