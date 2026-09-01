@@ -1,8 +1,8 @@
 # Share Mind Human Attest
 
-A portable Agent Skill that asks the person in an AI-assisted work conversation to make the consequential judgments the agent cannot legitimately make.
+A portable personal Agent Skill that asks the current participant in an AI-assisted work conversation to make the consequential judgments the agent cannot legitimately make.
 
-It works across domains because it does not encode separate legal, software, medical, or financial prompts. It uses one policy: inspect the current artifact and work trajectory, identify a material decision, and ask for the missing human act of adoption, context, representation, tradeoff, accountability, dissent, escalation, or intervention.
+It is designed to operate across domains without separate legal, software, medical, or financial prompts. It uses one policy: inspect the current artifact and available work trajectory, identify a consequential decision, and ask for the missing personal act of adoption, context, representation, tradeoff, accountability, dissent, escalation, or intervention.
 
 ## Why this exists
 
@@ -16,14 +16,15 @@ The goal is not to make the person reproduce the AI's work. It is to help them s
 
 ## What it does
 
-- Runs explicitly with `$share-mind-human-attest` or, where supported, before an agent hands off material work.
+- Runs explicitly with `$share-mind-human-attest` or, where supported, before an agent hands off work with evidence of high-stakes consequences.
 - Inspects the current artifact and available trajectory.
 - Asks one focused question at a time.
+- Explains `Why this matters:` using the concrete stakes of the current work.
 - Allows one focused follow-up for a missing response element.
 - Rechecks work changed during questioning.
-- Ends with `Human judgment checkpoint complete` or `Human checkpoint incomplete` and explicit limitations.
+- Distinguishes completion, dissent, escalation, no-question inspection, and unresolved outcomes without treating dissent as failure.
 
-It does not verify identity, credentials, unaided human authorship, correctness, safety, compliance, approval, exhaustive coverage, or a signature. It does not replace professional review.
+It does not verify that the responder is human. It also does not verify identity, credentials, authority, unaided human authorship, correctness, safety, compliance, approval, exhaustive coverage, or a signature. It captures personal judgment, not organizational adoption, and does not replace professional review.
 
 ## Install
 
@@ -43,11 +44,11 @@ Use $share-mind-human-attest on the work we just completed.
 
 The skill asks in the active conversation. It does not post comments, create checks, or contact the hosted Socrates service.
 
-Automatic end-of-task activation is best effort because each harness controls skill discovery and invocation. Explicit invocation is the portable, reliable path.
+Automatic end-of-task activation is best effort and limited to work with visible evidence of genuinely high-stakes consequences because each harness controls skill discovery and invocation. Explicit invocation is the portable, reliable path for other work.
 
 ## Why conversation trajectory matters
 
-The final artifact may hide assumptions, shortcuts, abandoned approaches, uncertainty, and decisions delegated to the agent. The available trajectory helps locate those decisions. It never counts as the participant's judgment; only a direct response after a checkpoint question can satisfy that question.
+The final artifact may hide assumptions, shortcuts, abandoned approaches, uncertainty, and decisions delegated to the agent. The visible trajectory helps locate those decisions. An earlier direct, explicit, change-specific decision from the participant may count when the work has not materially changed; generated summaries and inferred preferences never count. If context was compacted, the skill can disclose limited coverage and offer an optional deeper inspection of local session records when the harness makes them available.
 
 ## Project policies
 
