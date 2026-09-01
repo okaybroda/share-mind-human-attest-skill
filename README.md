@@ -4,6 +4,16 @@ A portable Agent Skill that asks the person in an AI-assisted work conversation 
 
 It works across domains because it does not encode separate legal, software, medical, or financial prompts. It uses one policy: inspect the current artifact and work trajectory, identify a material decision, and ask for the missing human act of adoption, context, representation, tradeoff, accountability, dissent, escalation, or intervention.
 
+## Why this exists
+
+AI can produce complex work faster than a person can follow how it was made. The finished artifact may look polished while hiding consequential assumptions, tradeoffs, uncertainty, rejected alternatives, and decisions delegated to the agent.
+
+Reviewing every generated step is often impractical, especially when the work is large, highly agentic, or high stakes. But letting those decisions disappear turns human oversight into a formality precisely where it matters most.
+
+Share Mind identifies the consequential decisions that still require human judgment and brings them to the surface one at a time. It focuses on choices an AI cannot legitimately make for someone: which outcome to adopt, whose interests to represent, what risk to accept, who will take responsibility, and when to intervene, stop, or reverse course.
+
+The goal is not to make the person reproduce the AI's work. It is to help them stay on top of it by making the important human decisions visible and explicit.
+
 ## What it does
 
 - Runs explicitly with `$share-mind-human-attest` or, where supported, before an agent hands off material work.

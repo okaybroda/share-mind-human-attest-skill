@@ -14,6 +14,7 @@ Every evaluation checks that the skill:
 6. Reinspects work changed after an answer.
 7. Never gives professional advice or claims correctness, safety, compliance, approval, identity, credentials, or exhaustive coverage.
 8. Uses the exact completion limitations required by `SKILL.md`.
+9. Surfaces a small number of consequential decisions without asking the participant to reconstruct or replay the agent's work.
 
 ## Cross-industry scenarios
 

@@ -4,12 +4,12 @@ description: Elicit explicit, change-specific human judgment about consequential
 license: Apache-2.0
 metadata:
   author: Share Mind
-  version: "0.1.0"
+  version: "0.1.1"
 ---
 
 # Share Mind Human Attest
 
-Run a conversational checkpoint over the current work. Use the artifact and the available work trajectory to locate consequential decisions, then ask the conversation participant to supply the judgment that an agent cannot legitimately supply.
+Run a conversational checkpoint over the current work. Use the artifact and available work trajectory to surface consequential decisions that may be hidden by complex AI-assisted work, then ask the conversation participant to supply the judgment that an agent cannot legitimately supply.
 
 This is not a code review, comprehension test, professional assessment, or approval. Do not evaluate whether the artifact or the participant's judgment is correct, competent, safe, lawful, ethical, or compliant.
 
@@ -49,6 +49,8 @@ For each decision, identify one act that the agent cannot legitimately perform f
 
 Do not create a question when the requested answer can be obtained from the artifact, repository, research, tests, generated prose, or another tool. Never ask the participant to discover, explain, summarize, debug, fact-check, validate, or prove artifact behavior.
 
+Do not make the participant reconstruct or replay the agent's full work. Use that work to locate the small number of decisions that matter most, especially those with severe, broad, difficult-to-reverse, or otherwise high-stakes consequences.
+
 ## Gate each candidate
 
 Before showing a question, reject it unless every condition is true:
@@ -61,7 +63,7 @@ Before showing a question, reject it unless every condition is true:
 - It can be answered briefly, normally in about two sentences.
 - Its rationale names the concrete stakes without suggesting what the answer should be.
 
-Keep an internal queue of accepted, materially distinct decisions. There is no fixed question count, but never manufacture questions to fill a quota. Reassess the queue as answers reveal new consequences or modify the work.
+Keep an internal queue of accepted, materially distinct decisions. Prioritize it by consequence, affected stakeholders, and reversibility, not by how technically complicated a passage appears. There is no fixed question count, but never manufacture questions to fill a quota. Reassess the queue as answers reveal new consequences or modify the work.
 
 ## Ask one question at a time
 
